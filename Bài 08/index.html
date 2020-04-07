@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 08</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1> Game đoán số</h1>
+<hr>
+<table>
+    <tr>
+        <th>Chọn Số</th>
+        <th>Kết Quả</th>
+        <th>Số Lượt</th>
+    </tr>
+    <tr>
+        <td><input type="number" id="number"></td>
+        <td><p id="resule">Chúc May Mắn</p></td>
+        <td><p id="time">Bạn Còn 3 Lượt</p></td>
+    </tr>
+</table>
+<div>
+    <button type="button"onclick="check()">Play</button>
+    <button type="reset" onclick="reset()">Chơi Lại</button>
+</div>
+<script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 04</title>
+</head>
+<body>
+<h1>Tìm Số Đầu Tiên Trong Dãy Số Fibo Chia Hết Cho 5</h1>
+<hr>
+<script>
+    let f0=0,f1=1,fn=f1+f0;
+    for (i=0;i<=fn;i++){
+        fn=f0+f1;
+        f0=f1;
+        f1=fn;
+        if (fn%5==0){
+            document.write(fn+"<br/>");
+            break;
+        }
+    }
+    </script>
+</body>
+</html>

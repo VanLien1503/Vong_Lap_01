@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 06</title>
+</head>
+<body>
+<h1>Tính tổng của 30 số chia hết cho 7 đầu tiên trong các số tự nhiên.</h1>
+<hr>
+<input type="number" id="number">
+<button type="button" onclick="sum()">Run</button>
+<p id="resule">Kết Quả</p>
+<script>
+    function sum() {
+        let input = parseInt(document.getElementById("number").value);
+        let sum=0;
+        let count=0;
+        for (let i = 1;count<input ; i++) {
+            if (i%7===0){
+                sum += i;
+                count++
+            }
+        }
+        document.getElementById("resule").innerHTML=sum;
+    }
+
+
+</script>
+</body>
+</html>
